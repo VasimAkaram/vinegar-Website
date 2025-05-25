@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Sugarcane Sirka - Pure Natural Vinegar</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-[Poppins] bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-emerald-700">Sirka<span class="text-amber-600">Organic</span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#benefits" class="nav-link">Benefits</a>
+                    <a href="#shop" class="nav-link">Shop</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-emerald-700" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-3 bg-white">
+                <a href="#home" class="block nav-link">Home</a>
+                <a href="#about" class="block nav-link">About</a>
+                <a href="#benefits" class="block nav-link">Benefits</a>
+                <a href="#shop" class="block nav-link">Shop</a>
+                <a href="#testimonials" class="block nav-link">Testimonials</a>
+                <a href="#contact" class="block nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-emerald-50 to-amber-50 opacity-90"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold text-emerald-800 mb-4 animate-fade-in">
+                        Pure Organic<br>Sugarcane Sirka
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 animate-fade-in-delay">
+                        Experience the authentic taste of naturally fermented sugarcane vinegar, crafted with care and tradition.
+                    </p>
+                    <button class="buy-now-btn">
+                        Buy Now
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Organic Sugarcane Sirka" 
+                         class="rounded-lg shadow-2xl animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-emerald-800 mb-12">About Our Product</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-gray-600">
+                        Our Organic Sugarcane Sirka is made from the finest quality sugarcane, carefully selected and naturally fermented to create a pure, authentic vinegar that brings both flavor and health benefits to your table.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <span>100% Organic & Natural</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <span>Traditional Fermentation Process</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <span>No Artificial Additives</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="About Our Sirka" 
+                         class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-emerald-800 mb-12">Health Benefits</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="benefit-card">
+                    <i class="fas fa-heart text-4xl text-emerald-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Heart Health</h3>
+                    <p class="text-gray-600">Supports cardiovascular health and helps maintain healthy blood pressure levels.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-weight text-4xl text-emerald-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Weight Management</h3>
+                    <p class="text-gray-600">Aids in digestion and helps maintain a healthy metabolism.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt text-4xl text-emerald-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Immune Support</h3>
+                    <p class="text-gray-600">Contains natural antioxidants that support your immune system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-emerald-800 mb-12">Shop Now</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Small Bottle" 
+                         class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Small Bottle</h3>
+                        <p class="text-gray-600 mb-4">250ml - Perfect for trying</p>
+                        <p class="text-2xl font-bold text-emerald-700 mb-4">₹299</p>
+                        <button class="add-to-cart-btn w-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Medium Bottle" 
+                         class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Medium Bottle</h3>
+                        <p class="text-gray-600 mb-4">500ml - Family size</p>
+                        <p class="text-2xl font-bold text-emerald-700 mb-4">₹549</p>
+                        <button class="add-to-cart-btn w-full">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Large Bottle" 
+                         class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Large Bottle</h3>
+                        <p class="text-gray-600 mb-4">1000ml - Best value</p>
+                        <p class="text-2xl font-bold text-emerald-700 mb-4">₹999</p>
+                        <button class="add-to-cart-btn w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-emerald-800 mb-12">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-emerald-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Priya Sharma</h4>
+                            <div class="text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The quality of this sirka is exceptional. I've been using it in my cooking and the taste is amazing!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-emerald-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Rajesh Kumar</h4>
+                            <div class="text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I've noticed significant health benefits since I started using this organic sirka. Highly recommended!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-emerald-600"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Anita Patel</h4>
+                            <div class="text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The packaging is beautiful and the product is pure. Will definitely order again!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-emerald-800 mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-2xl text-emerald-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-semibold">Address</h3>
+                            <p class="text-gray-600">123 Organic Street, Green Valley, India</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-2xl text-emerald-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-semibold">Phone</h3>
+                            <p class="text-gray-600">+91 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-2xl text-emerald-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-semibold">Email</h3>
+                            <p class="text-gray-600">info@organic-sirka.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="name">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sirka<span class="text-amber-400">Organic</span></h3>
+                    <p class="text-emerald-100">Pure, natural, and organic sugarcane vinegar for your health and wellness.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-emerald-100 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-emerald-100 hover:text-white">About</a></li>
+                        <li><a href="#benefits" class="text-emerald-100 hover:text-white">Benefits</a></li>
+                        <li><a href="#shop" class="text-emerald-100 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-emerald-100 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-emerald-100 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-emerald-100 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-emerald-100 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg text-gray-800">
+                        <button type="submit" class="w-full bg-amber-500 text-white py-2 rounded-lg hover:bg-amber-600 transition duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-emerald-700 mt-8 pt-8 text-center">
+                <p class="text-emerald-100">&copy; 2024 SirkaOrganic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <h3 class="text-2xl font-bold text-emerald-800 mb-4">Your Cart</h3>
+            <div id="cart-items" class="space-y-4 mb-6">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="border-t pt-4">
+                <div class="flex justify-between mb-4">
+                    <span class="font-semibold">Total:</span>
+                    <span id="cart-total" class="font-bold text-emerald-700">₹0</span>
+                </div>
+                <button class="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700 transition duration-300">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
