@@ -40,13 +40,34 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Also make child elements visible
+            entry.target.querySelectorAll('.benefit-card, .product-card, .testimonial-card').forEach(element => {
+                element.classList.add('active');
+            });
         }
     });
 }, observerOptions);
 
-// Observe all sections
+// Observe all sections and their cards
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
+    // Also observe individual cards
+    section.querySelectorAll('.benefit-card, .product-card, .testimonial-card').forEach(card => {
+        observer.observe(card);
+    });
+});
+
+// Initialize visibility on page load
+document.addEventListener('DOMContentLoaded', () => {
+    // Make all sections visible initially
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('visible');
+    });
+    
+    // Add scroll-reveal class to elements that should animate on scroll
+    document.querySelectorAll('.benefit-card, .product-card, .testimonial-card').forEach(element => {
+        element.classList.add('scroll-reveal');
+    });
 });
 
 // Cart Functionality
@@ -136,12 +157,4 @@ newsletterForm.addEventListener('submit', (e) => {
     // Add your newsletter subscription logic here
     alert('Thank you for subscribing to our newsletter!');
     newsletterForm.reset();
-});
-
-// Initialize AOS (Animate On Scroll)
-document.addEventListener('DOMContentLoaded', () => {
-    // Add scroll-reveal class to elements that should animate on scroll
-    document.querySelectorAll('.benefit-card, .product-card, .testimonial-card').forEach(element => {
-        element.classList.add('scroll-reveal');
-    });
 }); 
