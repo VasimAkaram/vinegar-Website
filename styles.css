@@ -58,11 +58,105 @@
 
 /* Button Styles */
 .buy-now-btn {
-    @apply bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 inline-flex items-center;
+    @apply px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center;
+    background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.buy-now-btn:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 50%, #065f46 100%);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.buy-now-btn i {
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.buy-now-btn:hover i {
+    transform: translateX(5px);
 }
 
 .add-to-cart-btn {
-    @apply bg-emerald-600 text-white py-2 rounded-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105;
+    @apply py-3 px-6 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #92400e 100%);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.add-to-cart-btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Add animation for button click */
+.buy-now-btn:active, .add-to-cart-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+}
+
+/* Add ripple effect */
+.buy-now-btn::after, .add-to-cart-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.buy-now-btn:focus:not(:active)::after, .add-to-cart-btn:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Add shine effect */
+.buy-now-btn::before, .add-to-cart-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.buy-now-btn:hover::before, .add-to-cart-btn:hover::before {
+    left: 100%;
 }
 
 /* Card Styles */
