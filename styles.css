@@ -62,6 +62,7 @@
     background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
 }
 
 .buy-now-btn:hover {
@@ -85,6 +86,7 @@
     box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.1);
     width: 100%;
+    border-radius: 2rem;
 }
 
 .add-to-cart-btn:hover {
