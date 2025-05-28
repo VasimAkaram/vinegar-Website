@@ -71,6 +71,7 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+/*working good */
 .buy-now-btn i {
     transition: transform 0.3s ease;
     margin-left: 8px;
